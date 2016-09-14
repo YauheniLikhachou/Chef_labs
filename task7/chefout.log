@@ -1,0 +1,40 @@
+[2016-09-14T19:42:47+01:00] INFO: Started chef-zero at chefzero://localhost:8889 with repository at /root
+  One version per cookbook
+
+[2016-09-14T19:42:47+01:00] INFO: Forking chef instance to converge...
+[2016-09-14T19:42:47+01:00] INFO: *** Chef 12.13.37 ***
+[2016-09-14T19:42:47+01:00] INFO: Platform: x86_64-linux
+[2016-09-14T19:42:47+01:00] INFO: Chef-client pid: 2011
+[2016-09-14T19:42:50+01:00] INFO: Setting the run_list to ["recipe[java::default]", "recipe[jboss::default]"] from CLI options
+[2016-09-14T19:42:50+01:00] INFO: Run List is [recipe[java::default], recipe[jboss::default]]
+[2016-09-14T19:42:50+01:00] INFO: Run List expands to [java::default, jboss::default]
+[2016-09-14T19:42:50+01:00] INFO: Starting Chef Run for Petchef02
+[2016-09-14T19:42:50+01:00] INFO: Running start handlers
+[2016-09-14T19:42:50+01:00] INFO: Start handlers complete.
+[2016-09-14T19:42:50+01:00] INFO: HTTP Request Returned 404 Not Found: Object not found: 
+[2016-09-14T19:42:51+01:00] INFO: Loading cookbooks [java@1.42.0, jboss@0.1.0, apt@4.0.1, windows@2.0.2, homebrew@2.1.2, compat_resource@12.10.7, build-essential@6.0.4, seven_zip@2.0.2, mingw@1.2.4]
+[2016-09-14T19:42:51+01:00] WARN: Chef::Provider::AptRepository already exists!  Cannot create deprecation class for LWRP provider apt_repository from cookbook apt
+[2016-09-14T19:42:51+01:00] WARN: AptRepository already exists!  Deprecation class overwrites Custom resource apt_repository from cookbook apt
+[2016-09-14T19:42:51+01:00] INFO: Processing log[jdk-version-changed] action nothing (java::notify line 29)
+[2016-09-14T19:42:51+01:00] INFO: Processing yum_package[java-1.6.0-openjdk] action install (java::openjdk line 54)
+[2016-09-14T19:42:55+01:00] INFO: Processing yum_package[java-1.6.0-openjdk-devel] action install (java::openjdk line 54)
+[2016-09-14T19:42:55+01:00] INFO: Processing java_alternatives[set-java-alternatives] action set (java::openjdk line 60)
+[2016-09-14T19:42:58+01:00] INFO: Processing ruby_block[set-env-java-home] action run (java::set_java_home line 19)
+[2016-09-14T19:42:58+01:00] INFO: Processing directory[/etc/profile.d] action create (java::set_java_home line 26)
+[2016-09-14T19:42:59+01:00] INFO: Processing template[/etc/profile.d/jdk.sh] action create (java::set_java_home line 30)
+[2016-09-14T19:42:59+01:00] INFO: Processing user[jboss] action create (jboss::default line 7)
+[2016-09-14T19:42:59+01:00] INFO: Processing group[jboss] action create (jboss::default line 13)
+[2016-09-14T19:42:59+01:00] INFO: Processing remote_file[/tmp/jboss.zip] action create (jboss::default line 19)
+[2016-09-14T19:43:00+01:00] INFO: Processing yum_package[unzip] action install (jboss::default line 29)
+[2016-09-14T19:43:00+01:00] INFO: Processing execute[extract jboss] action run (jboss::default line 34)
+[2016-09-14T19:43:00+01:00] INFO: Processing remote_file[/tmp/testweb.zip] action create (jboss::default line 40)
+[2016-09-14T19:43:01+01:00] INFO: Processing execute[extract app] action run (jboss::default line 52)
+[2016-09-14T19:43:01+01:00] INFO: execute[extract app] ran successfully
+[2016-09-14T19:43:01+01:00] INFO: Processing template[/etc/init.d/jboss] action create (jboss::default line 57)
+[2016-09-14T19:43:01+01:00] INFO: Processing execute[jboss_folder_chown] action run (jboss::default line 68)
+[2016-09-14T19:43:01+01:00] INFO: execute[jboss_folder_chown] ran successfully
+[2016-09-14T19:43:01+01:00] INFO: Processing service[jboss] action enable (jboss::default line 73)
+[2016-09-14T19:43:01+01:00] INFO: Processing service[jboss] action start (jboss::default line 73)
+[2016-09-14T19:43:01+01:00] INFO: Chef Run complete in 11.123792384 seconds
+[2016-09-14T19:43:01+01:00] INFO: Running report handlers
+[2016-09-14T19:43:01+01:00] INFO: Report handlers complete
