@@ -1,0 +1,21 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+#--------------------------------------------------------------------------------------------------
+	config.vm.define "web", primary: true do |web|  	
+ 		web.vm.box = "ubuntu/trusty64"
+  		web.vm.hostname = "chefserver"  	
+		web.vm.network "private_network", ip: "192.168.15.15"
+		#web.vm.network "forwarded_port", guest: 80, host: 8080
+		web.vm.network "forwarded_port", guest: 443, host: 9443
+  		web.vm.provider "virtualbox" do |machine|
+			machine.name = "chef08"
+			machine.cpus = 2
+			machine.memory = 4096
+		end
+	#web.vm.provision "shell", path: "sources/web.sh"
+	web.vm.provision "shell", inline: "echo The CHEF-server is DONE!"
+  	end
+end
+#--------------------------------------------------------------------------------------------------

@@ -1,0 +1,187 @@
+Creating new client for test
+Creating new node for test
+Connecting to 192.168.15.20
+192.168.15.20 -----> Installing Chef Omnibus (-v 12)
+192.168.15.20 downloading https://omnitruck-direct.chef.io/chef/install.sh
+192.168.15.20   to file /tmp/install.sh.2754/install.sh
+192.168.15.20 trying wget...
+192.168.15.20 el 6 x86_64
+192.168.15.20 Getting information for chef stable 12 for el...
+192.168.15.20 downloading https://omnitruck-direct.chef.io/stable/chef/metadata?v=12&p=el&pv=6&m=x86_64
+192.168.15.20   to file /tmp/install.sh.2759/metadata.txt
+192.168.15.20 trying wget...
+192.168.15.20 sha1	9e4078002ffb604f29ac0fdc92c5a8a13e4e3491
+192.168.15.20 sha256	78722816dd421fc8bae538fe559c37a59d5fd09c833cd4c97e577c59ecd5bc0f
+192.168.15.20 url	https://packages.chef.io/stable/el/6/chef-12.14.60-1.el6.x86_64.rpm
+192.168.15.20 version	12.14.60
+192.168.15.20 downloaded metadata file looks valid...
+192.168.15.20 downloading https://packages.chef.io/stable/el/6/chef-12.14.60-1.el6.x86_64.rpm
+192.168.15.20   to file /tmp/install.sh.2759/chef-12.14.60-1.el6.x86_64.rpm
+192.168.15.20 trying wget...
+192.168.15.20 Comparing checksum with sha256sum...
+192.168.15.20 Installing chef 12
+192.168.15.20 installing with rpm...
+192.168.15.20 warning: /tmp/install.sh.2759/chef-12.14.60-1.el6.x86_64.rpm: Header V4 DSA/SHA1 Signature, key ID 83ef826a: NOKEY
+192.168.15.20 Preparing...                ########################################### [100%]
+192.168.15.20    1:chef                   ########################################### [100%]
+192.168.15.20 Thank you for installing Chef!
+192.168.15.20 Starting the first Chef Client run...
+192.168.15.20 Starting Chef Client, version 12.14.60
+192.168.15.20 resolving cookbooks for run list: ["java", "jboss"]
+192.168.15.20 Synchronizing Cookbooks:
+192.168.15.20   - java (1.42.0)
+192.168.15.20   - apt (4.0.1)
+192.168.15.20   - compat_resource (12.10.7)
+192.168.15.20   - windows (2.0.2)
+192.168.15.20   - homebrew (2.1.2)
+192.168.15.20   - build-essential (6.0.4)
+192.168.15.20   - seven_zip (2.0.2)
+192.168.15.20   - mingw (1.2.4)
+192.168.15.20   - jboss (0.1.0)
+192.168.15.20 Installing Cookbook Gems:
+192.168.15.20 Compiling Cookbooks...
+192.168.15.20 [2016-09-15T18:44:20+01:00] WARN: Chef::Provider::AptRepository already exists!  Cannot create deprecation class for LWRP provider apt_repository from cookbook apt
+192.168.15.20 [2016-09-15T18:44:20+01:00] WARN: AptRepository already exists!  Deprecation class overwrites Custom resource apt_repository from cookbook apt
+192.168.15.20 Converging 17 resources
+192.168.15.20 Recipe: java::notify
+192.168.15.20   * log[jdk-version-changed] action nothing (skipped due to action :nothing)
+192.168.15.20 Recipe: java::openjdk
+192.168.15.20   * yum_package[java-1.6.0-openjdk] action install
+192.168.15.20     - install version 1.6.0.40-1.13.12.6.el6_8 of package java-1.6.0-openjdk
+192.168.15.20 Recipe: java::notify
+192.168.15.20   * log[jdk-version-changed] action write
+192.168.15.20   
+192.168.15.20 Recipe: java::openjdk
+192.168.15.20   * yum_package[java-1.6.0-openjdk-devel] action install
+192.168.15.20     - install version 1.6.0.40-1.13.12.6.el6_8 of package java-1.6.0-openjdk-devel
+192.168.15.20 Recipe: java::notify
+192.168.15.20   * log[jdk-version-changed] action write
+192.168.15.20   
+192.168.15.20 Recipe: java::openjdk
+192.168.15.20   * java_alternatives[set-java-alternatives] action set
+192.168.15.20     - Add alternative for appletviewer
+192.168.15.20     - Add alternative for apt
+192.168.15.20     - Add alternative for extcheck
+192.168.15.20     - Add alternative for idlj
+192.168.15.20     - Add alternative for jar
+192.168.15.20     - Add alternative for jarsigner
+192.168.15.20     - Add alternative for java
+192.168.15.20     - Add alternative for javac
+192.168.15.20     - Add alternative for javadoc
+192.168.15.20     - Add alternative for javah
+192.168.15.20     - Add alternative for javap
+192.168.15.20     - Add alternative for jconsole
+192.168.15.20     - Add alternative for jdb
+192.168.15.20     - Add alternative for jhat
+192.168.15.20     - Add alternative for jinfo
+192.168.15.20     - Add alternative for jmap
+192.168.15.20     - Add alternative for jps
+192.168.15.20     - Add alternative for jrunscript
+192.168.15.20     - Add alternative for jsadebugd
+192.168.15.20     - Add alternative for jstack
+192.168.15.20     - Add alternative for jstat
+192.168.15.20     - Add alternative for jstatd
+192.168.15.20     - Add alternative for keytool
+192.168.15.20     - Add alternative for native2ascii
+192.168.15.20     - Add alternative for orbd
+192.168.15.20     - Add alternative for pack200
+192.168.15.20     - Add alternative for policytool
+192.168.15.20     - Add alternative for rmic
+192.168.15.20     - Add alternative for rmid
+192.168.15.20     - Add alternative for rmiregistry
+192.168.15.20     - Add alternative for schemagen
+192.168.15.20     - Add alternative for serialver
+192.168.15.20     - Add alternative for servertool
+192.168.15.20     - Add alternative for tnameserv
+192.168.15.20     - Add alternative for unpack200
+192.168.15.20     - Add alternative for wsgen
+192.168.15.20     - Add alternative for wsimport
+192.168.15.20     - Add alternative for xjc
+192.168.15.20 Recipe: java::set_java_home
+192.168.15.20   * ruby_block[set-env-java-home] action run
+192.168.15.20     - execute the ruby block set-env-java-home
+192.168.15.20   * directory[/etc/profile.d] action create (up to date)
+192.168.15.20   * template[/etc/profile.d/jdk.sh] action create
+192.168.15.20     - create new file /etc/profile.d/jdk.sh
+192.168.15.20     - update content in file /etc/profile.d/jdk.sh from none to 778ff5
+192.168.15.20     --- /etc/profile.d/jdk.sh	2016-09-15 18:45:11.253008002 +0100
+192.168.15.20     +++ /etc/profile.d/.chef-jdk.sh20160915-2830-1ahsski	2016-09-15 18:45:11.253008002 +0100
+192.168.15.20     @@ -1 +1,2 @@
+192.168.15.20     +export JAVA_HOME=/usr/lib/jvm/java-1.6.0
+192.168.15.20     - change mode from '' to '0755'
+192.168.15.20 Recipe: jboss::default
+192.168.15.20   * linux_user[jboss] action create
+192.168.15.20     - create user jboss
+192.168.15.20   * group[jboss] action create (up to date)
+192.168.15.20   * remote_file[/tmp/jboss.zip] action create
+192.168.15.20     - create new file /tmp/jboss.zip
+192.168.15.20     - update content in file /tmp/jboss.zip from none to 3426fd
+192.168.15.20     (file sizes exceed 10000000 bytes, diff output suppressed)
+192.168.15.20     - change mode from '' to '0755'
+192.168.15.20     - change owner from '' to 'jboss'
+192.168.15.20     - change group from '' to 'jboss'
+192.168.15.20   * yum_package[unzip] action install
+192.168.15.20     - install version 6.0-4.el6 of package unzip
+192.168.15.20   * execute[extract jboss] action run
+192.168.15.20     - execute unzip /tmp/jboss.zip -d /opt
+192.168.15.20   * remote_file[/tmp/testweb.zip] action create
+192.168.15.20     - create new file /tmp/testweb.zip
+192.168.15.20     - update content in file /tmp/testweb.zip from none to b54a7a
+192.168.15.20     (file sizes exceed 10000000 bytes, diff output suppressed)
+192.168.15.20     - change mode from '' to '0755'
+192.168.15.20     - change owner from '' to 'jboss'
+192.168.15.20     - change group from '' to 'jboss'
+192.168.15.20   * execute[extract app] action run
+192.168.15.20     - execute unzip -o /tmp/testweb.zip -d /opt/jboss-6.1.0.Final/server/default/deploy
+192.168.15.20   * template[/etc/init.d/jboss] action create
+192.168.15.20     - create new file /etc/init.d/jboss
+192.168.15.20     - update content in file /etc/init.d/jboss from none to 4985a5
+192.168.15.20     --- /etc/init.d/jboss	2016-09-15 18:52:12.921008008 +0100
+192.168.15.20     +++ /etc/init.d/.chef-jboss20160915-2830-1asurwy	2016-09-15 18:52:12.921008008 +0100
+192.168.15.20     @@ -1 +1,34 @@
+192.168.15.20     +#!/bin/bash
+192.168.15.20     +# chkconfig: 2345 95 05
+192.168.15.20     +
+192.168.15.20     +start(){
+192.168.15.20     +        echo "JBOSS starting"
+192.168.15.20     +        su -l jboss -c 'nohup /opt/jboss-6.1.0.Final/bin/run.sh -b 127.0.0.1  &>> /opt/jboss-6.1.0.Final/mainlog&
+192.168.15.20     +echo $! > /opt/jboss-6.1.0.Final/pid'
+192.168.15.20     +}
+192.168.15.20     +stop(){
+192.168.15.20     +       echo "JBOSS stopping"
+192.168.15.20     +       pkill -9 -P $(cat /opt/jboss-6.1.0.Final/pid) &>> /opt/jboss-6.1.0.Final/mainlog&
+192.168.15.20     +}
+192.168.15.20     +
+192.168.15.20     +restart(){
+192.168.15.20     +        stop
+192.168.15.20     +        sleep 5
+192.168.15.20     +        start
+192.168.15.20     +}
+192.168.15.20     +case "$1" in
+192.168.15.20     +  start)
+192.168.15.20     +        start
+192.168.15.20     +        ;;
+192.168.15.20     +  stop)
+192.168.15.20     +        stop
+192.168.15.20     +        ;;
+192.168.15.20     +  restart)
+192.168.15.20     +        restart
+192.168.15.20     +        ;;
+192.168.15.20     +  *)
+192.168.15.20     +        echo "Usage: jboss {start|stop|restart}"
+192.168.15.20     +exit 1
+192.168.15.20     +esac
+192.168.15.20     +exit
+192.168.15.20     - change mode from '' to '0775'
+192.168.15.20     - change owner from '' to 'root'
+192.168.15.20     - change group from '' to 'root'
+192.168.15.20   * execute[jboss_folder_chown] action run
+192.168.15.20     - execute chown -R jboss:jboss /opt/jboss-6.1.0.Final
+192.168.15.20   * service[jboss] action enable
+192.168.15.20     - enable service service[jboss]
+192.168.15.20   * service[jboss] action start
+192.168.15.20     - start service service[jboss]
+192.168.15.20 
+192.168.15.20 Running handlers:
+192.168.15.20 Running handlers complete
+192.168.15.20 Chef Client finished, 17/20 resources updated in 07 minutes 59 seconds

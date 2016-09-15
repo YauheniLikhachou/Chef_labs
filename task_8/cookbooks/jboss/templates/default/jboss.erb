@@ -1,0 +1,33 @@
+#!/bin/bash
+# chkconfig: 2345 95 05
+
+start(){
+        echo "JBOSS starting"
+        su -l <%= @user %> -c 'nohup /opt/jboss-5.1.0.GA/bin/run.sh -b 0.0.0.0  &>> /opt/jboss-5.1.0.GA/mainlog&
+echo $! > /opt/jboss-5.1.0.GA/pid'
+}
+stop(){
+       echo "JBOSS stopping"
+       pkill -9 -P $(cat /opt/jboss-5.1.0.GA/pid) &>> <%= @home %>/mainlog&
+}
+
+restart(){
+        stop
+        sleep 5
+        start
+}
+case "$1" in
+  start)
+        start
+        ;;
+  stop)
+        stop
+        ;;
+  restart)
+        restart
+        ;;
+  *)
+        echo "Usage: jboss {start|stop|restart}"
+exit 1
+esac
+exit
