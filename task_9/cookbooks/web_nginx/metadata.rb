@@ -1,0 +1,6 @@
+name             'web_nginx'
+maintainer 'likhachou'
+maintainer_email 'yauheni_likhachou@epam.com'
+description      'Installs and configures NGINX web server'
+version          '1.0.0'
+depends	'web'
