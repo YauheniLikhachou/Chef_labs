@@ -1,0 +1,6 @@
+name             'web_apache'
+maintainer 'likhachou'
+maintainer_email 'yauheni_likhachou@epam.com'
+description      'Installs and configures Apache HTTPD server'
+version          '1.0.0'
+depends	'web'

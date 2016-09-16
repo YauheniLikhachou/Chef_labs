@@ -1,0 +1,8 @@
+name             'web'
+maintainer 'yauheni_likhachou'
+maintainer_email 'yauheni_likhacho2@epam.com'
+license          'All rights reserved'
+description      'Installs and configures Apache HTTPD/NGINX web server'
+version          '1.0.0'
+depends	'web_nginx'
+depends 'web_apache'
