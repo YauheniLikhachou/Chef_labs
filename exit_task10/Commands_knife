@@ -1,0 +1,2 @@
+knife cookbook upload --all
+knife bootstrap 192.168.15.20 --ssh-password vagrant --node-name "jenkins1" -r 'role[jenkins]' |tee chefout.log

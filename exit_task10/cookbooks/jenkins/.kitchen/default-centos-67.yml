@@ -1,0 +1,6 @@
+---
+hostname: 127.0.0.1
+port: '2201'
+username: vagrant
+ssh_key: "/home/Student/chef/task5/chef/cookbooks/jenkins/.kitchen/kitchen-vagrant/kitchen-jenkins-default-centos-67/.vagrant/machines/default/virtualbox/private_key"
+last_action: create
