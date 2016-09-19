@@ -1,0 +1,279 @@
+I, [2016-09-19T18:36:55.950103 #8818]  INFO -- default-centos-67: -----> Cleaning up any prior instances of <default-centos-67>
+I, [2016-09-19T18:36:55.950485 #8818]  INFO -- default-centos-67: -----> Destroying <default-centos-67>...
+I, [2016-09-19T18:36:58.052268 #8818]  INFO -- default-centos-67: ==> default: Forcing shutdown of VM...
+I, [2016-09-19T18:36:59.480953 #8818]  INFO -- default-centos-67: ==> default: Destroying VM and associated drives...
+I, [2016-09-19T18:37:00.009995 #8818]  INFO -- default-centos-67: Vagrant instance <default-centos-67> destroyed.
+I, [2016-09-19T18:37:00.011256 #8818]  INFO -- default-centos-67: Finished destroying <default-centos-67> (0m4.06s).
+I, [2016-09-19T18:37:00.011572 #8818]  INFO -- default-centos-67: -----> Testing <default-centos-67>
+I, [2016-09-19T18:37:00.011650 #8818]  INFO -- default-centos-67: -----> Creating <default-centos-67>...
+I, [2016-09-19T18:37:01.540843 #8818]  INFO -- default-centos-67: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2016-09-19T18:37:01.650726 #8818]  INFO -- default-centos-67: ==> default: Importing base box 'bento/centos-6.7'...
+I, [2016-09-19T18:37:10.060690 #8818]  INFO -- default-centos-67: [KProgress: 10%[KProgress: 20%[KProgress: 40%[KProgress: 50%[KProgress: 70%[KProgress: 80%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2016-09-19T18:37:10.226905 #8818]  INFO -- default-centos-67: ==> default: Checking if box 'bento/centos-6.7' is up to date...
+I, [2016-09-19T18:37:11.332955 #8818]  INFO -- default-centos-67: ==> default: Setting the name of the VM: kitchen-jenkins-default-centos-67_default_1474299431305_52293
+I, [2016-09-19T18:37:11.930297 #8818]  INFO -- default-centos-67: ==> default: Fixed port collision for 22 => 2222. Now on port 2201.
+I, [2016-09-19T18:37:11.978486 #8818]  INFO -- default-centos-67: ==> default: Clearing any previously set network interfaces...
+I, [2016-09-19T18:37:12.079466 #8818]  INFO -- default-centos-67: ==> default: Preparing network interfaces based on configuration...
+I, [2016-09-19T18:37:12.079673 #8818]  INFO -- default-centos-67:     default: Adapter 1: nat
+I, [2016-09-19T18:37:12.187872 #8818]  INFO -- default-centos-67: ==> default: Forwarding ports...
+I, [2016-09-19T18:37:12.233749 #8818]  INFO -- default-centos-67:     default: 22 (guest) => 2201 (host) (adapter 1)
+I, [2016-09-19T18:37:12.529723 #8818]  INFO -- default-centos-67: ==> default: Booting VM...
+I, [2016-09-19T18:37:12.726902 #8818]  INFO -- default-centos-67: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2016-09-19T18:37:12.927536 #8818]  INFO -- default-centos-67:     default: SSH address: 127.0.0.1:2201
+I, [2016-09-19T18:37:12.927691 #8818]  INFO -- default-centos-67:     default: SSH username: vagrant
+I, [2016-09-19T18:37:12.927751 #8818]  INFO -- default-centos-67:     default: SSH auth method: private key
+I, [2016-09-19T18:37:35.375088 #8818]  INFO -- default-centos-67:     default: 
+I, [2016-09-19T18:37:35.375169 #8818]  INFO -- default-centos-67:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2016-09-19T18:37:35.375194 #8818]  INFO -- default-centos-67:     default: this with a newly generated keypair for better security.
+I, [2016-09-19T18:37:36.851248 #8818]  INFO -- default-centos-67:     default: 
+I, [2016-09-19T18:37:36.851353 #8818]  INFO -- default-centos-67:     default: Inserting generated public key within guest...
+I, [2016-09-19T18:37:37.289971 #8818]  INFO -- default-centos-67:     default: Removing insecure key from the guest if it's present...
+I, [2016-09-19T18:37:37.592425 #8818]  INFO -- default-centos-67:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2016-09-19T18:37:38.737083 #8818]  INFO -- default-centos-67: ==> default: Machine booted and ready!
+I, [2016-09-19T18:37:39.252510 #8818]  INFO -- default-centos-67: [default] GuestAdditions versions on your host (5.0.24) and guest (5.0.20) do not match.
+I, [2016-09-19T18:37:39.752144 #8818]  INFO -- default-centos-67: Loaded plugins: fastestmirror
+I, [2016-09-19T18:37:39.793299 #8818]  INFO -- default-centos-67: Setting up Install Process
+I, [2016-09-19T18:37:39.793945 #8818]  INFO -- default-centos-67: Determining fastest mirrors
+I, [2016-09-19T18:37:40.191921 #8818]  INFO -- default-centos-67:  * base: ftp.byfly.by
+I, [2016-09-19T18:37:40.192016 #8818]  INFO -- default-centos-67:  * extras: ftp.byfly.by
+I, [2016-09-19T18:37:40.192044 #8818]  INFO -- default-centos-67:  * updates: ftp.byfly.by
+I, [2016-09-19T18:37:46.725822 #8818]  INFO -- default-centos-67: No package kernel-devel-2.6.32-573.el6.x86_64 available.
+I, [2016-09-19T18:37:46.957889 #8818]  INFO -- default-centos-67: Package bzip2-1.0.5-7.el6_0.x86_64 already installed and latest version
+I, [2016-09-19T18:37:46.997882 #8818]  INFO -- default-centos-67: Resolving Dependencies
+I, [2016-09-19T18:37:46.998391 #8818]  INFO -- default-centos-67: --> Running transaction check
+I, [2016-09-19T18:37:46.998804 #8818]  INFO -- default-centos-67: ---> Package binutils.x86_64 0:2.20.51.0.2-5.43.el6 will be updated
+I, [2016-09-19T18:37:47.001382 #8818]  INFO -- default-centos-67: ---> Package binutils.x86_64 0:2.20.51.0.2-5.44.el6 will be an update
+I, [2016-09-19T18:37:47.001780 #8818]  INFO -- default-centos-67: ---> Package gcc.x86_64 0:4.4.7-17.el6 will be installed
+I, [2016-09-19T18:37:47.002377 #8818]  INFO -- default-centos-67: --> Processing Dependency: libgomp = 4.4.7-17.el6 for package: gcc-4.4.7-17.el6.x86_64
+I, [2016-09-19T18:37:47.002823 #8818]  INFO -- default-centos-67: --> Processing Dependency: cpp = 4.4.7-17.el6 for package: gcc-4.4.7-17.el6.x86_64
+I, [2016-09-19T18:37:47.006422 #8818]  INFO -- default-centos-67: --> Processing Dependency: libgcc >= 4.4.7-17.el6 for package: gcc-4.4.7-17.el6.x86_64
+I, [2016-09-19T18:37:47.006853 #8818]  INFO -- default-centos-67: --> Processing Dependency: glibc-devel >= 2.2.90-12 for package: gcc-4.4.7-17.el6.x86_64
+I, [2016-09-19T18:37:47.007428 #8818]  INFO -- default-centos-67: ---> Package make.x86_64 1:3.81-20.el6 will be updated
+I, [2016-09-19T18:37:47.007842 #8818]  INFO -- default-centos-67: ---> Package make.x86_64 1:3.81-23.el6 will be an update
+I, [2016-09-19T18:37:47.008353 #8818]  INFO -- default-centos-67: ---> Package perl.x86_64 4:5.10.1-141.el6_7.1 will be installed
+I, [2016-09-19T18:37:47.014079 #8818]  INFO -- default-centos-67: --> Processing Dependency: perl-libs = 4:5.10.1-141.el6_7.1 for package: 4:perl-5.10.1-141.el6_7.1.x86_64
+I, [2016-09-19T18:37:47.016708 #8818]  INFO -- default-centos-67: --> Processing Dependency: perl-libs for package: 4:perl-5.10.1-141.el6_7.1.x86_64
+I, [2016-09-19T18:37:47.017258 #8818]  INFO -- default-centos-67: --> Processing Dependency: perl(version) for package: 4:perl-5.10.1-141.el6_7.1.x86_64
+I, [2016-09-19T18:37:47.018185 #8818]  INFO -- default-centos-67: --> Processing Dependency: perl(Pod::Simple) for package: 4:perl-5.10.1-141.el6_7.1.x86_64
+I, [2016-09-19T18:37:47.019920 #8818]  INFO -- default-centos-67: --> Processing Dependency: perl(Module::Pluggable) for package: 4:perl-5.10.1-141.el6_7.1.x86_64
+I, [2016-09-19T18:37:47.020886 #8818]  INFO -- default-centos-67: --> Processing Dependency: libperl.so()(64bit) for package: 4:perl-5.10.1-141.el6_7.1.x86_64
+I, [2016-09-19T18:37:47.021395 #8818]  INFO -- default-centos-67: --> Running transaction check
+I, [2016-09-19T18:37:47.021821 #8818]  INFO -- default-centos-67: ---> Package cpp.x86_64 0:4.4.7-17.el6 will be installed
+I, [2016-09-19T18:37:47.026151 #8818]  INFO -- default-centos-67: ---> Package glibc-devel.x86_64 0:2.12-1.192.el6 will be installed
+I, [2016-09-19T18:37:47.038358 #8818]  INFO -- default-centos-67: --> Processing Dependency: glibc-headers = 2.12-1.192.el6 for package: glibc-devel-2.12-1.192.el6.x86_64
+I, [2016-09-19T18:37:47.039295 #8818]  INFO -- default-centos-67: --> Processing Dependency: glibc = 2.12-1.192.el6 for package: glibc-devel-2.12-1.192.el6.x86_64
+I, [2016-09-19T18:37:47.050350 #8818]  INFO -- default-centos-67: --> Processing Dependency: glibc-headers for package: glibc-devel-2.12-1.192.el6.x86_64
+I, [2016-09-19T18:37:47.050570 #8818]  INFO -- default-centos-67: ---> Package libgcc.x86_64 0:4.4.7-16.el6 will be updated
+I, [2016-09-19T18:37:47.052148 #8818]  INFO -- default-centos-67: ---> Package libgcc.x86_64 0:4.4.7-17.el6 will be an update
+I, [2016-09-19T18:37:47.052656 #8818]  INFO -- default-centos-67: ---> Package libgomp.x86_64 0:4.4.7-16.el6 will be updated
+I, [2016-09-19T18:37:47.053127 #8818]  INFO -- default-centos-67: ---> Package libgomp.x86_64 0:4.4.7-17.el6 will be an update
+I, [2016-09-19T18:37:47.057153 #8818]  INFO -- default-centos-67: ---> Package perl-Module-Pluggable.x86_64 1:3.90-141.el6_7.1 will be installed
+I, [2016-09-19T18:37:47.059674 #8818]  INFO -- default-centos-67: ---> Package perl-Pod-Simple.x86_64 1:3.13-141.el6_7.1 will be installed
+I, [2016-09-19T18:37:47.064037 #8818]  INFO -- default-centos-67: --> Processing Dependency: perl(Pod::Escapes) >= 1.04 for package: 1:perl-Pod-Simple-3.13-141.el6_7.1.x86_64
+I, [2016-09-19T18:37:47.064915 #8818]  INFO -- default-centos-67: ---> Package perl-libs.x86_64 4:5.10.1-141.el6_7.1 will be installed
+I, [2016-09-19T18:37:47.067792 #8818]  INFO -- default-centos-67: ---> Package perl-version.x86_64 3:0.77-141.el6_7.1 will be installed
+I, [2016-09-19T18:37:47.068517 #8818]  INFO -- default-centos-67: --> Running transaction check
+I, [2016-09-19T18:37:47.068982 #8818]  INFO -- default-centos-67: ---> Package glibc.x86_64 0:2.12-1.166.el6 will be updated
+I, [2016-09-19T18:37:47.075835 #8818]  INFO -- default-centos-67: --> Processing Dependency: glibc = 2.12-1.166.el6 for package: glibc-common-2.12-1.166.el6.x86_64
+I, [2016-09-19T18:37:47.079082 #8818]  INFO -- default-centos-67: ---> Package glibc.x86_64 0:2.12-1.192.el6 will be an update
+I, [2016-09-19T18:37:47.082821 #8818]  INFO -- default-centos-67: ---> Package glibc-headers.x86_64 0:2.12-1.192.el6 will be installed
+I, [2016-09-19T18:37:47.084298 #8818]  INFO -- default-centos-67: --> Processing Dependency: kernel-headers >= 2.2.1 for package: glibc-headers-2.12-1.192.el6.x86_64
+I, [2016-09-19T18:37:47.095759 #8818]  INFO -- default-centos-67: --> Processing Dependency: kernel-headers for package: glibc-headers-2.12-1.192.el6.x86_64
+I, [2016-09-19T18:37:47.096327 #8818]  INFO -- default-centos-67: ---> Package perl-Pod-Escapes.x86_64 1:1.04-141.el6_7.1 will be installed
+I, [2016-09-19T18:37:47.096878 #8818]  INFO -- default-centos-67: --> Running transaction check
+I, [2016-09-19T18:37:47.097426 #8818]  INFO -- default-centos-67: ---> Package glibc-common.x86_64 0:2.12-1.166.el6 will be updated
+I, [2016-09-19T18:37:47.100247 #8818]  INFO -- default-centos-67: ---> Package glibc-common.x86_64 0:2.12-1.192.el6 will be an update
+I, [2016-09-19T18:37:47.105337 #8818]  INFO -- default-centos-67: --> Processing Dependency: tzdata >= 2015g-4 for package: glibc-common-2.12-1.192.el6.x86_64
+I, [2016-09-19T18:37:47.107852 #8818]  INFO -- default-centos-67: ---> Package kernel-headers.x86_64 0:2.6.32-642.4.2.el6 will be installed
+I, [2016-09-19T18:37:47.108464 #8818]  INFO -- default-centos-67: --> Running transaction check
+I, [2016-09-19T18:37:47.111394 #8818]  INFO -- default-centos-67: ---> Package tzdata.noarch 0:2015e-1.el6 will be updated
+I, [2016-09-19T18:37:47.112301 #8818]  INFO -- default-centos-67: ---> Package tzdata.noarch 0:2016f-1.el6 will be an update
+I, [2016-09-19T18:37:47.455357 #8818]  INFO -- default-centos-67: --> Finished Dependency Resolution
+I, [2016-09-19T18:37:47.501447 #8818]  INFO -- default-centos-67: 
+I, [2016-09-19T18:37:47.501535 #8818]  INFO -- default-centos-67: Dependencies Resolved
+I, [2016-09-19T18:37:47.506449 #8818]  INFO -- default-centos-67: 
+I, [2016-09-19T18:37:47.506520 #8818]  INFO -- default-centos-67: ================================================================================
+I, [2016-09-19T18:37:47.506547 #8818]  INFO -- default-centos-67:  Package                  Arch      Version                    Repository  Size
+I, [2016-09-19T18:37:47.506575 #8818]  INFO -- default-centos-67: ================================================================================
+I, [2016-09-19T18:37:47.506606 #8818]  INFO -- default-centos-67: Installing:
+I, [2016-09-19T18:37:47.506634 #8818]  INFO -- default-centos-67:  gcc                      x86_64    4.4.7-17.el6               base        10 M
+I, [2016-09-19T18:37:47.506676 #8818]  INFO -- default-centos-67:  perl                     x86_64    4:5.10.1-141.el6_7.1       base        10 M
+I, [2016-09-19T18:37:47.506702 #8818]  INFO -- default-centos-67: Updating:
+I, [2016-09-19T18:37:47.506725 #8818]  INFO -- default-centos-67:  binutils                 x86_64    2.20.51.0.2-5.44.el6       base       2.8 M
+I, [2016-09-19T18:37:47.506751 #8818]  INFO -- default-centos-67:  make                     x86_64    1:3.81-23.el6              base       389 k
+I, [2016-09-19T18:37:47.506774 #8818]  INFO -- default-centos-67: Installing for dependencies:
+I, [2016-09-19T18:37:47.506800 #8818]  INFO -- default-centos-67:  cpp                      x86_64    4.4.7-17.el6               base       3.7 M
+I, [2016-09-19T18:37:47.506823 #8818]  INFO -- default-centos-67:  glibc-devel              x86_64    2.12-1.192.el6             base       988 k
+I, [2016-09-19T18:37:47.506864 #8818]  INFO -- default-centos-67:  glibc-headers            x86_64    2.12-1.192.el6             base       617 k
+I, [2016-09-19T18:37:47.506888 #8818]  INFO -- default-centos-67:  kernel-headers           x86_64    2.6.32-642.4.2.el6         updates    4.4 M
+I, [2016-09-19T18:37:47.506909 #8818]  INFO -- default-centos-67:  perl-Module-Pluggable    x86_64    1:3.90-141.el6_7.1         base        40 k
+I, [2016-09-19T18:37:47.506963 #8818]  INFO -- default-centos-67:  perl-Pod-Escapes         x86_64    1:1.04-141.el6_7.1         base        33 k
+I, [2016-09-19T18:37:47.506987 #8818]  INFO -- default-centos-67:  perl-Pod-Simple          x86_64    1:3.13-141.el6_7.1         base       213 k
+I, [2016-09-19T18:37:47.507008 #8818]  INFO -- default-centos-67:  perl-libs                x86_64    4:5.10.1-141.el6_7.1       base       579 k
+I, [2016-09-19T18:37:47.507035 #8818]  INFO -- default-centos-67:  perl-version             x86_64    3:0.77-141.el6_7.1         base        52 k
+I, [2016-09-19T18:37:47.507056 #8818]  INFO -- default-centos-67: Updating for dependencies:
+I, [2016-09-19T18:37:47.507077 #8818]  INFO -- default-centos-67:  glibc                    x86_64    2.12-1.192.el6             base       3.8 M
+I, [2016-09-19T18:37:47.507103 #8818]  INFO -- default-centos-67:  glibc-common             x86_64    2.12-1.192.el6             base        14 M
+I, [2016-09-19T18:37:47.507136 #8818]  INFO -- default-centos-67:  libgcc                   x86_64    4.4.7-17.el6               base       103 k
+I, [2016-09-19T18:37:47.507158 #8818]  INFO -- default-centos-67:  libgomp                  x86_64    4.4.7-17.el6               base       134 k
+I, [2016-09-19T18:37:47.507179 #8818]  INFO -- default-centos-67:  tzdata                   noarch    2016f-1.el6                updates    452 k
+I, [2016-09-19T18:37:47.507199 #8818]  INFO -- default-centos-67: 
+I, [2016-09-19T18:37:47.507250 #8818]  INFO -- default-centos-67: Transaction Summary
+I, [2016-09-19T18:37:47.507270 #8818]  INFO -- default-centos-67: ================================================================================
+I, [2016-09-19T18:37:47.507290 #8818]  INFO -- default-centos-67: Install      11 Package(s)
+I, [2016-09-19T18:37:47.507309 #8818]  INFO -- default-centos-67: Upgrade       7 Package(s)
+I, [2016-09-19T18:37:47.507328 #8818]  INFO -- default-centos-67: 
+I, [2016-09-19T18:37:47.507947 #8818]  INFO -- default-centos-67: Total download size: 53 M
+I, [2016-09-19T18:37:47.507996 #8818]  INFO -- default-centos-67: Downloading Packages:
+I, [2016-09-19T18:38:03.851408 #8818]  INFO -- default-centos-67: --------------------------------------------------------------------------------
+I, [2016-09-19T18:38:03.852059 #8818]  INFO -- default-centos-67: Total                                           3.2 MB/s |  53 MB     00:16     
+I, [2016-09-19T18:38:03.893941 #8818]  INFO -- default-centos-67: warning: rpmts_HdrFromFdno: Header V3 RSA/SHA1 Signature, key ID c105b9de: NOKEY
+I, [2016-09-19T18:38:03.894500 #8818]  INFO -- default-centos-67: Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
+I, [2016-09-19T18:38:03.894931 #8818]  INFO -- default-centos-67: Importing GPG key 0xC105B9DE:
+I, [2016-09-19T18:38:03.894962 #8818]  INFO -- default-centos-67:  Userid : CentOS-6 Key (CentOS 6 Official Signing Key) <centos-6-key@centos.org>
+I, [2016-09-19T18:38:03.894986 #8818]  INFO -- default-centos-67:  Package: centos-release-6-7.el6.centos.12.3.x86_64 (@anaconda-CentOS-201508042137.x86_64/6.7)
+I, [2016-09-19T18:38:03.895016 #8818]  INFO -- default-centos-67:  From   : /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
+I, [2016-09-19T18:38:03.901473 #8818]  INFO -- default-centos-67: Running rpm_check_debug
+I, [2016-09-19T18:38:04.097853 #8818]  INFO -- default-centos-67: Running Transaction Test
+I, [2016-09-19T18:38:04.888963 #8818]  INFO -- default-centos-67: Transaction Test Succeeded
+I, [2016-09-19T18:38:05.085697 #8818]  INFO -- default-centos-67: Running Transaction
+I, [2016-09-19T18:38:06.215448 #8818]  INFO -- default-centos-67:   Updating   : libgcc-4.4.7-17.el6.x86_64                                  1/25 
+I, [2016-09-19T18:38:07.305047 #8818]  INFO -- default-centos-67:   Installing : kernel-headers-2.6.32-642.4.2.el6.x86_64                    2/25 
+I, [2016-09-19T18:38:10.839283 #8818]  INFO -- default-centos-67:   Updating   : tzdata-2016f-1.el6.noarch                                   3/25 
+I, [2016-09-19T18:38:13.558962 #8818]  INFO -- default-centos-67:   Updating   : glibc-common-2.12-1.192.el6.x86_64                          4/25 
+I, [2016-09-19T18:38:16.970759 #8818]  INFO -- default-centos-67:   Updating   : glibc-2.12-1.192.el6.x86_64                                 5/25 
+I, [2016-09-19T18:38:16.998866 #8818]  INFO -- default-centos-67:   Installing : 1:perl-Pod-Escapes-1.04-141.el6_7.1.x86_64                  6/25 
+I, [2016-09-19T18:38:17.072191 #8818]  INFO -- default-centos-67:   Installing : 1:perl-Module-Pluggable-3.90-141.el6_7.1.x86_64             7/25 
+I, [2016-09-19T18:38:17.103834 #8818]  INFO -- default-centos-67:   Installing : 1:perl-Pod-Simple-3.13-141.el6_7.1.x86_64                   8/25 
+I, [2016-09-19T18:38:17.184843 #8818]  INFO -- default-centos-67:   Installing : 3:perl-version-0.77-141.el6_7.1.x86_64                      9/25 
+I, [2016-09-19T18:38:19.835737 #8818]  INFO -- default-centos-67:   Installing : 4:perl-libs-5.10.1-141.el6_7.1.x86_64                      10/25 
+I, [2016-09-19T18:38:20.349156 #8818]  INFO -- default-centos-67:   Installing : 4:perl-5.10.1-141.el6_7.1.x86_64                           11/25 
+I, [2016-09-19T18:38:20.805077 #8818]  INFO -- default-centos-67:   Installing : cpp-4.4.7-17.el6.x86_64                                    12/25 
+I, [2016-09-19T18:38:21.095380 #8818]  INFO -- default-centos-67:   Updating   : binutils-2.20.51.0.2-5.44.el6.x86_64                       13/25 
+I, [2016-09-19T18:38:21.232836 #8818]  INFO -- default-centos-67:   Installing : glibc-headers-2.12-1.192.el6.x86_64                        14/25 
+I, [2016-09-19T18:38:21.278959 #8818]  INFO -- default-centos-67:   Installing : glibc-devel-2.12-1.192.el6.x86_64                          15/25 
+I, [2016-09-19T18:38:22.036434 #8818]  INFO -- default-centos-67:   Updating   : libgomp-4.4.7-17.el6.x86_64                                16/25 
+I, [2016-09-19T18:38:22.147283 #8818]  INFO -- default-centos-67:   Installing : gcc-4.4.7-17.el6.x86_64                                    17/25 
+I, [2016-09-19T18:38:22.188214 #8818]  INFO -- default-centos-67:   Updating   : 1:make-3.81-23.el6.x86_64                                  18/25 
+I, [2016-09-19T18:38:22.225009 #8818]  INFO -- default-centos-67:   Cleanup    : libgomp-4.4.7-16.el6.x86_64                                19/25 
+I, [2016-09-19T18:38:22.258092 #8818]  INFO -- default-centos-67:   Cleanup    : binutils-2.20.51.0.2-5.43.el6.x86_64                       20/25 
+I, [2016-09-19T18:38:22.276131 #8818]  INFO -- default-centos-67:   Cleanup    : 1:make-3.81-20.el6.x86_64                                  21/25 
+I, [2016-09-19T18:38:22.298980 #8818]  INFO -- default-centos-67:   Cleanup    : glibc-common-2.12-1.166.el6.x86_64                         22/25 
+I, [2016-09-19T18:38:22.353532 #8818]  INFO -- default-centos-67:   Cleanup    : glibc-2.12-1.166.el6.x86_64                                23/25 
+I, [2016-09-19T18:38:22.377545 #8818]  INFO -- default-centos-67:   Cleanup    : tzdata-2015e-1.el6.noarch                                  24/25 
+I, [2016-09-19T18:38:22.456291 #8818]  INFO -- default-centos-67:   Cleanup    : libgcc-4.4.7-16.el6.x86_64                                 25/25 
+I, [2016-09-19T18:38:22.465795 #8818]  INFO -- default-centos-67:   Verifying  : glibc-2.12-1.192.el6.x86_64                                 1/25 
+I, [2016-09-19T18:38:22.470862 #8818]  INFO -- default-centos-67:   Verifying  : 1:perl-Module-Pluggable-3.90-141.el6_7.1.x86_64             2/25 
+I, [2016-09-19T18:38:22.476757 #8818]  INFO -- default-centos-67:   Verifying  : glibc-devel-2.12-1.192.el6.x86_64                           3/25 
+I, [2016-09-19T18:38:22.481495 #8818]  INFO -- default-centos-67:   Verifying  : tzdata-2016f-1.el6.noarch                                   4/25 
+I, [2016-09-19T18:38:22.486243 #8818]  INFO -- default-centos-67:   Verifying  : cpp-4.4.7-17.el6.x86_64                                     5/25 
+I, [2016-09-19T18:38:22.490983 #8818]  INFO -- default-centos-67:   Verifying  : 4:perl-5.10.1-141.el6_7.1.x86_64                            6/25 
+I, [2016-09-19T18:38:22.515599 #8818]  INFO -- default-centos-67:   Verifying  : kernel-headers-2.6.32-642.4.2.el6.x86_64                    7/25 
+I, [2016-09-19T18:38:22.530562 #8818]  INFO -- default-centos-67:   Verifying  : glibc-common-2.12-1.192.el6.x86_64                          8/25 
+I, [2016-09-19T18:38:22.534400 #8818]  INFO -- default-centos-67:   Verifying  : 1:make-3.81-23.el6.x86_64                                   9/25 
+I, [2016-09-19T18:38:22.538366 #8818]  INFO -- default-centos-67:   Verifying  : 1:perl-Pod-Simple-3.13-141.el6_7.1.x86_64                  10/25 
+I, [2016-09-19T18:38:22.542569 #8818]  INFO -- default-centos-67:   Verifying  : 1:perl-Pod-Escapes-1.04-141.el6_7.1.x86_64                 11/25 
+I, [2016-09-19T18:38:22.548751 #8818]  INFO -- default-centos-67:   Verifying  : libgcc-4.4.7-17.el6.x86_64                                 12/25 
+I, [2016-09-19T18:38:22.554805 #8818]  INFO -- default-centos-67:   Verifying  : binutils-2.20.51.0.2-5.44.el6.x86_64                       13/25 
+I, [2016-09-19T18:38:22.558277 #8818]  INFO -- default-centos-67:   Verifying  : 3:perl-version-0.77-141.el6_7.1.x86_64                     14/25 
+I, [2016-09-19T18:38:22.562912 #8818]  INFO -- default-centos-67:   Verifying  : 4:perl-libs-5.10.1-141.el6_7.1.x86_64                      15/25 
+I, [2016-09-19T18:38:22.568251 #8818]  INFO -- default-centos-67:   Verifying  : glibc-headers-2.12-1.192.el6.x86_64                        16/25 
+I, [2016-09-19T18:38:22.572289 #8818]  INFO -- default-centos-67:   Verifying  : gcc-4.4.7-17.el6.x86_64                                    17/25 
+I, [2016-09-19T18:38:22.576888 #8818]  INFO -- default-centos-67:   Verifying  : libgomp-4.4.7-17.el6.x86_64                                18/25 
+I, [2016-09-19T18:38:22.577906 #8818]  INFO -- default-centos-67:   Verifying  : libgomp-4.4.7-16.el6.x86_64                                19/25 
+I, [2016-09-19T18:38:22.578484 #8818]  INFO -- default-centos-67:   Verifying  : glibc-common-2.12-1.166.el6.x86_64                         20/25 
+I, [2016-09-19T18:38:22.579766 #8818]  INFO -- default-centos-67:   Verifying  : glibc-2.12-1.166.el6.x86_64                                21/25 
+I, [2016-09-19T18:38:22.580380 #8818]  INFO -- default-centos-67:   Verifying  : binutils-2.20.51.0.2-5.43.el6.x86_64                       22/25 
+I, [2016-09-19T18:38:22.581238 #8818]  INFO -- default-centos-67:   Verifying  : 1:make-3.81-20.el6.x86_64                                  23/25 
+I, [2016-09-19T18:38:22.581969 #8818]  INFO -- default-centos-67:   Verifying  : libgcc-4.4.7-16.el6.x86_64                                 24/25 
+I, [2016-09-19T18:38:22.649329 #8818]  INFO -- default-centos-67:   Verifying  : tzdata-2015e-1.el6.noarch                                  25/25 
+I, [2016-09-19T18:38:22.649401 #8818]  INFO -- default-centos-67: 
+I, [2016-09-19T18:38:22.649427 #8818]  INFO -- default-centos-67: Installed:
+I, [2016-09-19T18:38:22.649493 #8818]  INFO -- default-centos-67:   gcc.x86_64 0:4.4.7-17.el6           perl.x86_64 4:5.10.1-141.el6_7.1          
+I, [2016-09-19T18:38:22.649517 #8818]  INFO -- default-centos-67: 
+I, [2016-09-19T18:38:22.649544 #8818]  INFO -- default-centos-67: Dependency Installed:
+I, [2016-09-19T18:38:22.649569 #8818]  INFO -- default-centos-67:   cpp.x86_64 0:4.4.7-17.el6                                                     
+I, [2016-09-19T18:38:22.649609 #8818]  INFO -- default-centos-67:   glibc-devel.x86_64 0:2.12-1.192.el6                                           
+I, [2016-09-19T18:38:22.649637 #8818]  INFO -- default-centos-67:   glibc-headers.x86_64 0:2.12-1.192.el6                                         
+I, [2016-09-19T18:38:22.649661 #8818]  INFO -- default-centos-67:   kernel-headers.x86_64 0:2.6.32-642.4.2.el6                                    
+I, [2016-09-19T18:38:22.649682 #8818]  INFO -- default-centos-67:   perl-Module-Pluggable.x86_64 1:3.90-141.el6_7.1                               
+I, [2016-09-19T18:38:22.649709 #8818]  INFO -- default-centos-67:   perl-Pod-Escapes.x86_64 1:1.04-141.el6_7.1                                    
+I, [2016-09-19T18:38:22.649732 #8818]  INFO -- default-centos-67:   perl-Pod-Simple.x86_64 1:3.13-141.el6_7.1                                     
+I, [2016-09-19T18:38:22.649754 #8818]  INFO -- default-centos-67:   perl-libs.x86_64 4:5.10.1-141.el6_7.1                                         
+I, [2016-09-19T18:38:22.649779 #8818]  INFO -- default-centos-67:   perl-version.x86_64 3:0.77-141.el6_7.1                                        
+I, [2016-09-19T18:38:22.649813 #8818]  INFO -- default-centos-67: 
+I, [2016-09-19T18:38:22.649833 #8818]  INFO -- default-centos-67: Updated:
+I, [2016-09-19T18:38:22.649853 #8818]  INFO -- default-centos-67:   binutils.x86_64 0:2.20.51.0.2-5.44.el6        make.x86_64 1:3.81-23.el6       
+I, [2016-09-19T18:38:22.649884 #8818]  INFO -- default-centos-67: 
+I, [2016-09-19T18:38:22.649905 #8818]  INFO -- default-centos-67: Dependency Updated:
+I, [2016-09-19T18:38:22.649930 #8818]  INFO -- default-centos-67:   glibc.x86_64 0:2.12-1.192.el6       glibc-common.x86_64 0:2.12-1.192.el6      
+I, [2016-09-19T18:38:22.649962 #8818]  INFO -- default-centos-67:   libgcc.x86_64 0:4.4.7-17.el6        libgomp.x86_64 0:4.4.7-17.el6             
+I, [2016-09-19T18:38:22.649984 #8818]  INFO -- default-centos-67:   tzdata.noarch 0:2016f-1.el6        
+I, [2016-09-19T18:38:22.650035 #8818]  INFO -- default-centos-67: 
+I, [2016-09-19T18:38:22.650792 #8818]  INFO -- default-centos-67: Complete!
+I, [2016-09-19T18:38:22.738513 #8818]  INFO -- default-centos-67: Copy iso file /usr/share/virtualbox/VBoxGuestAdditions.iso into the box /tmp/VBoxGuestAdditions.iso
+I, [2016-09-19T18:38:24.746381 #8818]  INFO -- default-centos-67: Installing Virtualbox Guest Additions 5.0.24 - guest version is 5.0.20
+I, [2016-09-19T18:38:24.874295 #8818]  INFO -- default-centos-67: Verifying archive integrity... All good.
+I, [2016-09-19T18:38:24.954181 #8818]  INFO -- default-centos-67: Uncompressing VirtualBox 5.0.24 Guest Additions for Linux............
+I, [2016-09-19T18:38:24.960840 #8818]  INFO -- default-centos-67: VirtualBox Guest Additions installer
+I, [2016-09-19T18:38:25.020283 #8818]  INFO -- default-centos-67: Removing installed version 5.0.20 of VirtualBox Guest Additions...
+I, [2016-09-19T18:38:25.098816 #8818]  INFO -- default-centos-67: Stopping VirtualBox Additions [FAILED]
+I, [2016-09-19T18:38:25.098900 #8818]  INFO -- default-centos-67: (Cannot unload module vboxguest)
+I, [2016-09-19T18:38:25.221942 #8818]  INFO -- default-centos-67: Removing existing VirtualBox non-DKMS kernel modules[  OK  ]
+I, [2016-09-19T18:38:27.836708 #8818]  INFO -- default-centos-67: Stopping VirtualBox Guest Addition service [  OK  ][  OK  ]
+I, [2016-09-19T18:38:27.993704 #8818]  INFO -- default-centos-67: Copying additional installer modules ...
+I, [2016-09-19T18:38:29.417832 #8818]  INFO -- default-centos-67: Installing additional modules ...
+I, [2016-09-19T18:38:29.528737 #8818]  INFO -- default-centos-67: Removing existing VirtualBox non-DKMS kernel modules[  OK  ]
+I, [2016-09-19T18:38:29.532822 #8818]  INFO -- default-centos-67: Building the VirtualBox Guest Additions kernel modules
+I, [2016-09-19T18:38:29.532913 #8818]  INFO -- default-centos-67: The headers for the current running kernel were not found. If the following
+I, [2016-09-19T18:38:29.532941 #8818]  INFO -- default-centos-67: module compilation fails then this could be the reason.
+I, [2016-09-19T18:38:29.534359 #8818]  INFO -- default-centos-67: The missing package can be probably installed with
+I, [2016-09-19T18:38:29.534406 #8818]  INFO -- default-centos-67: yum install kernel-devel-2.6.32-573.el6.x86_64
+I, [2016-09-19T18:38:29.534430 #8818]  INFO -- default-centos-67: 
+I, [2016-09-19T18:38:29.564784 #8818]  INFO -- default-centos-67: Building the main Guest Additions module[FAILED]
+I, [2016-09-19T18:38:29.564931 #8818]  INFO -- default-centos-67: (Look at /var/log/vboxadd-install.log to find out what went wrong)
+I, [2016-09-19T18:38:29.593821 #8818]  INFO -- default-centos-67: Doing non-kernel setup of the Guest Additions[  OK  ]
+I, [2016-09-19T18:38:30.603670 #8818]  INFO -- default-centos-67: Restarting VM to apply changes...
+I, [2016-09-19T18:38:30.673956 #8818]  INFO -- default-centos-67: ==> default: Attempting graceful shutdown of VM...
+I, [2016-09-19T18:38:39.743048 #8818]  INFO -- default-centos-67: ==> default: Booting VM...
+I, [2016-09-19T18:38:39.963150 #8818]  INFO -- default-centos-67: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2016-09-19T18:38:40.079357 #8818]  INFO -- default-centos-67:     default: SSH address: 127.0.0.1:2201
+I, [2016-09-19T18:38:40.079519 #8818]  INFO -- default-centos-67:     default: SSH username: vagrant
+I, [2016-09-19T18:38:40.079640 #8818]  INFO -- default-centos-67:     default: SSH auth method: private key
+I, [2016-09-19T18:39:02.966911 #8818]  INFO -- default-centos-67: ==> default: Machine booted and ready!
+I, [2016-09-19T18:39:02.967986 #8818]  INFO -- default-centos-67: ==> default: Checking for guest additions in VM...
+I, [2016-09-19T18:39:03.050450 #8818]  INFO -- default-centos-67:     default: No guest additions were detected on the base box for this VM! Guest
+I, [2016-09-19T18:39:03.050566 #8818]  INFO -- default-centos-67:     default: additions are required for forwarded ports, shared folders, host only
+I, [2016-09-19T18:39:03.050594 #8818]  INFO -- default-centos-67:     default: networking, and more. If SSH fails on this machine, please install
+I, [2016-09-19T18:39:03.050624 #8818]  INFO -- default-centos-67:     default: the guest additions and repackage the box to continue.
+I, [2016-09-19T18:39:03.050646 #8818]  INFO -- default-centos-67:     default: 
+I, [2016-09-19T18:39:03.050667 #8818]  INFO -- default-centos-67:     default: This is not an error message; everything may continue to work properly,
+I, [2016-09-19T18:39:03.050687 #8818]  INFO -- default-centos-67:     default: in which case you may ignore this message.
+I, [2016-09-19T18:39:03.050861 #8818]  INFO -- default-centos-67: ==> default: Setting hostname...
+I, [2016-09-19T18:39:08.566281 #8818]  INFO -- default-centos-67: ==> default: Machine not provisioned because `--no-provision` is specified.
+I, [2016-09-19T18:39:10.667594 #8818]  INFO -- default-centos-67: [SSH] Established
+I, [2016-09-19T18:39:10.671673 #8818]  INFO -- default-centos-67: Vagrant instance <default-centos-67> created.
+I, [2016-09-19T18:39:10.672554 #8818]  INFO -- default-centos-67: Finished creating <default-centos-67> (2m10.66s).
+I, [2016-09-19T18:39:10.672634 #8818]  INFO -- default-centos-67: -----> Converging <default-centos-67>...
+I, [2016-09-19T18:39:10.673135 #8818]  INFO -- default-centos-67: Preparing files for transfer
+I, [2016-09-19T18:39:10.673234 #8818]  INFO -- default-centos-67: Preparing dna.json
+I, [2016-09-19T18:39:10.673426 #8818]  INFO -- default-centos-67: Preparing current project directory as a cookbook
+I, [2016-09-19T18:39:10.763951 #8818]  INFO -- default-centos-67: Removing non-cookbook files before transfer
+I, [2016-09-19T18:39:10.780658 #8818]  INFO -- default-centos-67: Preparing solo.rb
+I, [2016-09-19T18:39:10.831278 #8818]  INFO -- default-centos-67: -----> Installing Chef Omnibus (install only if missing)
+I, [2016-09-19T18:39:10.831371 #8818]  INFO -- default-centos-67: Downloading https://omnitruck.chef.io/install.sh to file /tmp/install.sh
+I, [2016-09-19T18:39:10.831397 #8818]  INFO -- default-centos-67: Trying wget...
+I, [2016-09-19T18:39:11.251529 #8818]  INFO -- default-centos-67: Download complete.
+I, [2016-09-19T18:39:11.271630 #8818]  INFO -- default-centos-67: el 6 x86_64
+I, [2016-09-19T18:39:11.271713 #8818]  INFO -- default-centos-67: Getting information for chef stable  for el...
+I, [2016-09-19T18:39:11.271736 #8818]  INFO -- default-centos-67: downloading https://omnitruck.chef.io/stable/chef/metadata?v=&p=el&pv=6&m=x86_64
+I, [2016-09-19T18:39:11.271757 #8818]  INFO -- default-centos-67:   to file /tmp/install.sh.1836/metadata.txt
+I, [2016-09-19T18:39:11.271778 #8818]  INFO -- default-centos-67: trying wget...
+I, [2016-09-19T18:39:11.544894 #8818]  INFO -- default-centos-67: sha1	9e4078002ffb604f29ac0fdc92c5a8a13e4e3491
+I, [2016-09-19T18:39:11.544980 #8818]  INFO -- default-centos-67: sha256	78722816dd421fc8bae538fe559c37a59d5fd09c833cd4c97e577c59ecd5bc0f
+I, [2016-09-19T18:39:11.545004 #8818]  INFO -- default-centos-67: url	https://packages.chef.io/stable/el/6/chef-12.14.60-1.el6.x86_64.rpm
+I, [2016-09-19T18:39:11.545025 #8818]  INFO -- default-centos-67: version	12.14.60
+I, [2016-09-19T18:39:11.552535 #8818]  INFO -- default-centos-67: downloaded metadata file looks valid...
+I, [2016-09-19T18:39:11.552606 #8818]  INFO -- default-centos-67: downloading https://packages.chef.io/stable/el/6/chef-12.14.60-1.el6.x86_64.rpm
+I, [2016-09-19T18:39:11.552638 #8818]  INFO -- default-centos-67:   to file /tmp/install.sh.1836/chef-12.14.60-1.el6.x86_64.rpm
+I, [2016-09-19T18:39:11.554827 #8818]  INFO -- default-centos-67: trying wget...
